@@ -1,0 +1,94 @@
+@tailwind utilities;
+
+@layer utilities {
+  .soft-theme {
+    @apply bg-opacity-10 dark:bg-opacity-10;
+  }
+  .soft-theme-hover {
+    @apply hover:bg-opacity-20 hover:dark:bg-opacity-20;
+  }
+  .outline-theme {
+    @apply border-2 border-solid border-main-border dark:border-main-border-dark;
+  }
+  .outline-theme-strong {
+    @apply border-2 border-solid border-strong-border dark:border-strong-border-dark;
+  }
+  .ghost-theme {
+    @apply p-0;
+  }
+  /*------ primary-theme ------*/
+  .primary-solid {
+    @apply text-primary-contrast bg-primary;
+  }
+  .primary-solid-hover {
+    @apply primary-solid hover:bg-primary-dark;
+  }
+  .primary-soft {
+    @apply bg-primary text-primary soft-theme;
+  }
+  .primary-soft-hover {
+    @apply primary-soft bg-primary soft-theme-hover;
+  }
+  .primary-ghost {
+    @apply ghost-theme text-primary;
+  }
+  .primary-ghost-hover {
+    @apply primary-ghost hover:text-primary-dark;
+  }
+  .primary-outline {
+    @apply outline-theme text-primary;
+  }
+  .primary-outline-hover {
+    @apply primary-outline hover:text-primary-dark;
+  }
+  /*------ secondary-theme ------*/
+  .secondary-solid {
+    @apply text-secondary-contrast bg-secondary;
+  }
+  .secondary-solid-hover {
+    @apply secondary-solid hover:bg-secondary-dark;
+  }
+  .secondary-soft {
+    @apply bg-secondary text-secondary soft-theme;
+  }
+  .secondary-soft-hover {
+    @apply secondary-soft soft-theme-hover;
+  }
+  .secondary-ghost {
+    @apply ghost-theme text-secondary;
+  }
+  .secondary-ghost-hover {
+    @apply secondary-ghost hover:text-secondary-dark;
+  }
+  .secondary-outline {
+    @apply outline-theme text-secondary;
+  }
+  .secondary-outline-hover {
+    @apply secondary-outline hover:text-secondary-dark;
+  }
+  /*------ accent-theme ------*/
+  .accent-solid {
+    @apply text-accent-contrast bg-accent;
+  }
+  .accent-solid-hover {
+    @apply accent-solid hover:bg-accent-dark;
+  }
+  .accent-soft {
+    @apply bg-accent text-accent soft-theme;
+  }
+  .accent-soft-hover {
+    @apply accent-soft soft-theme-hover;
+  }
+  .accent-ghost {
+    @apply ghost-theme text-accent;
+  }
+  .accent-ghost-hover {
+    @apply accent-ghost hover:text-accent-dark;
+  }
+  .accent-outline {
+    @apply outline-theme text-accent;
+  }
+  .accent-outline-hover {
+    @apply accent-outline hover:text-accent-dark;
+  }
+}
