@@ -28,55 +28,40 @@
 
   /*------ Headings ------*/
 
-  .text-header-primary {
+  .header-primary {
     @apply text-h1 font-secondary leading-tight tracking-tight text-strong dark:text-strong-dark font-semibold;
   }
-  .text-header-secondary {
+  .header-secondary {
     @apply text-h2 font-secondary leading-tight text-strong dark:text-strong-dark font-medium;
   }
-  .text-header-tertiary {
-    @apply text-h3 font-secondary leading-tight tracking-tight text-strong dark:text-strong-dark font-medium;
+  .header-tertiary {
+    @apply text-h3 font-secondary leading-tight tracking-tight font-medium;
   }
-  .text-header-content {
+  .header-content {
     @apply text-h4 font-primary leading-tight text-normal dark:text-normal-dark font-medium;
   }
-  .text-header-subHeadline {
+  .header-subHeadline {
     @apply text-xs font-secondary leading-tight font-medium uppercase;
   }
 
   /*------ Paragraphs ------*/
-  .text-paragraph-lg {
+  .paragraph-lg {
     @apply text-paragraph-lg font-primary leading-relaxed text-normal dark:text-normal-dark;
   }
-  .text-paragraph {
+  .paragraph {
     @apply text-base font-primary leading-relaxed text-muted dark:text-muted-dark;
   }
-  .text-paragraph-sm {
+  .paragraph-sm {
     @apply text-paragraph-sm font-primary leading-relaxed text-subtle dark:text-subtle-dark;
   }
 
-  /*------ Button Sizes ------*/
+  /*------ Buttons ------*/
 
   .btn {
-    @apply p-btn rounded-md font-medium text-paragraph-lg;
-  }
-  .btn-ghost {
     @apply font-medium text-paragraph-lg;
   }
 
-  /*------ Icon Sizes & Padding ------*/
-
-  .p-icon-tight {
-    @apply p-2; /* 8px padding */
-  }
-
-  .p-icon {
-    @apply p-3; /* 12px padding */
-  }
-
-  .p-icon-wide {
-    @apply p-4; /* 16px padding */
-  }
+  /*------ Icon Sizes  ------*/
 
   .icon-sm {
     @apply w-6 aspect-square;

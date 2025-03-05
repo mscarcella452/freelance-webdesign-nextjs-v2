@@ -1,7 +1,7 @@
 @import "@/styles/base.css"; /* base */
-@import "@/styles/components.css"; /* components */
-@import "@/styles/layout.css"; /* utilities (layout helpers) */
-@import "@/styles/typography.css"; /* utilities (text helpers) */
+@import "@/styles/components.css";
+@import "@/styles/typography.css";
+@import "@/styles/layout.css";
 @import "@/styles/ui-theme-variants.css"; /* utilities (theme helpers) */
 
 @tailwind base;

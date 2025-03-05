@@ -80,8 +80,8 @@
     @apply p-2;
   }
 
-  .p-container-tile {
-    @apply p-1;
+  .p-container-pill {
+    @apply px-4 py-1;
   }
   /* 
   .p-btn-wide {
