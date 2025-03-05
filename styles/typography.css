@@ -1,0 +1,90 @@
+@tailwind utilities;
+
+@layer utilities {
+  /*-------------- Typography Utilities -------------- */
+
+  .text-h1 {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  .text-h2 {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  .text-h3 {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  .text-h4 {
+    @apply text-lg sm:text-xl md:text-2xl leading-tight;
+  }
+
+  .text-paragraph-lg {
+    @apply text-base lg:text-lg;
+  }
+  .text-paragraph-sm {
+    @apply text-xs sm:text-sm;
+  }
+
+  /*------ Headings ------*/
+
+  .text-header-primary {
+    @apply text-h1 font-secondary leading-tight tracking-tight text-strong dark:text-strong-dark font-semibold;
+  }
+  .text-header-secondary {
+    @apply text-h2 font-secondary leading-tight text-strong dark:text-strong-dark font-medium;
+  }
+  .text-header-tertiary {
+    @apply text-h3 font-secondary leading-tight tracking-tight text-strong dark:text-strong-dark font-medium;
+  }
+  .text-header-content {
+    @apply text-h4 font-primary leading-tight text-normal dark:text-normal-dark font-medium;
+  }
+  .text-header-subHeadline {
+    @apply text-xs font-secondary leading-tight font-medium uppercase;
+  }
+
+  /*------ Paragraphs ------*/
+  .text-paragraph-lg {
+    @apply text-paragraph-lg font-primary leading-relaxed text-normal dark:text-normal-dark;
+  }
+  .text-paragraph {
+    @apply text-base font-primary leading-relaxed text-muted dark:text-muted-dark;
+  }
+  .text-paragraph-sm {
+    @apply text-paragraph-sm font-primary leading-relaxed text-subtle dark:text-subtle-dark;
+  }
+
+  /*------ Button Sizes ------*/
+
+  .btn {
+    @apply p-btn rounded-md font-medium text-paragraph-lg;
+  }
+  .btn-ghost {
+    @apply font-medium text-paragraph-lg;
+  }
+
+  /*------ Icon Sizes & Padding ------*/
+
+  .p-icon-tight {
+    @apply p-2; /* 8px padding */
+  }
+
+  .p-icon {
+    @apply p-3; /* 12px padding */
+  }
+
+  .p-icon-wide {
+    @apply p-4; /* 16px padding */
+  }
+
+  .icon-sm {
+    @apply w-6 aspect-square;
+  }
+  .icon {
+    @apply w-8 aspect-square;
+  }
+  .icon-lg {
+    @apply w-8 lg:w-10 aspect-square;
+  }
+}

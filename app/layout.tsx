@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Lato, Archivo, League_Spartan } from "next/font/google";
 // import { Lato, Montserrat, Archivo } from "next/font/google";
 import "@styles/globals.css";
-// import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 
@@ -40,7 +39,7 @@ export default function RootLayout({
         className={`${primaryFont.variable} ${secondaryFont.variable} ${accentFont.variable} h-[100vh] relative`}
       >
         <Header />
-        <main className='pt-16 md:pt-20 flex flex-col'>{children}</main>
+        <main className='main-body'>{children}</main>
         <Footer />
       </body>
     </html>

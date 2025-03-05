@@ -1,8 +1,6 @@
 import ThemeToggleButton from "@/components/header/ThemeToggleButton";
 import Link from "next/link";
 import clsx from "clsx";
-import NavMenu from "@/components/header/NavMenu";
-import NavLinks from "@/components/header/NavLinks";
 
 export const LogoDemo = () => {
   return (
@@ -27,7 +25,7 @@ const Header = () => {
     </Link>
   );
   return (
-    <header className='bg-background-main dark:bg-background-main-dark nav-container fixed top-0 left-0 right-0 h-16 md:h-20 z-50 flex items-center'>
+    <header className='site-header nav-container bg-background-main dark:bg-background-main-dark flex items-center'>
       <nav className='flex gap-4 lg:gap-10 items-center w-full transition-colors duration-300 font-semibold text-strong dark:text-strong-dark'>
         <Link
           className='flex gap-1 items-center '
@@ -39,15 +37,8 @@ const Header = () => {
         </Link>
 
         <div className='flex flex-grow inherit-gap items-center justify-end'>
-          <ul className='hidden lg:flex inherit-gap  items-center'>
-            <NavLinks />
-          </ul>
           <ActionLink className='hidden lg:block' />
           <ThemeToggleButton />
-          <NavMenu>
-            <NavLinks />
-            <ActionLink />
-          </NavMenu>
         </div>
       </nav>
     </header>

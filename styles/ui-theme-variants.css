@@ -7,12 +7,12 @@
   .soft-theme-hover {
     @apply hover:bg-opacity-20 hover:dark:bg-opacity-20;
   }
-  .outline-theme {
+  /* .outline-theme {
     @apply border-2 border-solid border-main-border dark:border-main-border-dark;
   }
   .outline-theme-strong {
     @apply border-2 border-solid border-strong-border dark:border-strong-border-dark;
-  }
+  } */
   .ghost-theme {
     @apply p-0;
   }
@@ -35,12 +35,12 @@
   .primary-ghost-hover {
     @apply primary-ghost hover:text-primary-dark;
   }
-  .primary-outline {
+  /* .primary-outline {
     @apply outline-theme text-primary;
-  }
-  .primary-outline-hover {
+  } */
+  /* .primary-outline-hover {
     @apply primary-outline hover:text-primary-dark;
-  }
+  } */
   /*------ secondary-theme ------*/
   .secondary-solid {
     @apply text-secondary-contrast bg-secondary;
@@ -60,12 +60,12 @@
   .secondary-ghost-hover {
     @apply secondary-ghost hover:text-secondary-dark;
   }
-  .secondary-outline {
+  /* .secondary-outline {
     @apply outline-theme text-secondary;
-  }
-  .secondary-outline-hover {
+  } */
+  /* .secondary-outline-hover {
     @apply secondary-outline hover:text-secondary-dark;
-  }
+  } */
   /*------ accent-theme ------*/
   .accent-solid {
     @apply text-accent-contrast bg-accent;
@@ -85,10 +85,10 @@
   .accent-ghost-hover {
     @apply accent-ghost hover:text-accent-dark;
   }
-  .accent-outline {
+  /* .accent-outline {
     @apply outline-theme text-accent;
   }
   .accent-outline-hover {
     @apply accent-outline hover:text-accent-dark;
-  }
+  } */
 }

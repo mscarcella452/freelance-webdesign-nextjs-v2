@@ -1,0 +1,15 @@
+@tailwind components;
+
+@layer components {
+  .site-header {
+    @apply h-site-header-height sm:h-site-header-height-sm lg:h-site-header-height-lg fixed top-0 left-0 right-0 p-4 z-50;
+  }
+
+  .main-body {
+    @apply pt-site-header-height sm:pt-site-header-height-sm lg:pt-site-header-height-lg;
+  }
+
+  .subHeadline-tile-secondary {
+    @apply p-container-tile text-header-subHeadline text-secondary-contrast dark:text-secondary-contrast-dark bg-secondary dark:bg-secondary;
+  }
+}

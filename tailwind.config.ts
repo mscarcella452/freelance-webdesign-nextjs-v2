@@ -12,62 +12,11 @@ export default {
 
   darkMode: "selector", // Enables dark mode via the 'dark' class on the <html> element
   theme: {
-    // colors: {
-    //   white: "#FFFFFF",
-    //   black: "#3f3e3e",
-
-    //   transparent: "transparent",
-    //   current: "currentColor", // Used for borders or icons matching text color
-    //   textColor: {
-    //     DEFAULT: "#3f3e3e",
-    //     dark: "#F9FAFB",
-    //   },
-    //   // Primary Color
-    //   primary: {
-    //     light: "#5393bf", // Light shade
-    //     DEFAULT: "#30638e", // medium blue-teal
-    //     dark: "#234968", // Dark shade
-    //     contrast: "#f0f0f0", // Contrast text shade
-    //   },
-
-    //   // Secondary Color
-    //   secondary: {
-    //     light: "#e7828e", // Light shade
-    //     DEFAULT: "#d1495b", // reddish-pink
-    //     dark: "#a13345", // Dark shade
-    //     contrast: "#f0f0f0", // Contrast text shade
-    //   },
-
-    //   // Neutral Colors
-    //   neutral: {
-    //     light: "#F3F4F6", // Light gray (used for background)
-    //     DEFAULT: "#9CA3AF", // Medium gray (used for text or borders)
-    //     dark: "#374151", // Dark gray (headings or accents)
-    //     contrast: "#f0f0f0", // Contrast text shade
-    //   },
-
-    //   // Accent Colors
-    //   accent: {
-    //     light: "#f3c878", // Light shade
-    //     DEFAULT: "#edae49", // Warm Mustard Yellow
-    //     dark: "#c98b3b", // Dark shade
-    //     contrast: "#f0f0f0", // Contrast text shade
-    //   },
-
-    //   // // Background Colors
-    //   // background: {
-    //   //   light: "#F9FAFB", // Light background for sections
-    //   //   DEFAULT: "#FFFFFF", // Default white background for cards/containers
-    //   //   dark: "#121212", // Dark background (dark mode)
-    //   //   // dark: "#111827", // Dark background (dark mode)
-    //   // },
-    // },
     extend: {
       colors: {
         // Background Colors (for different sections)
-        "background-main": "#ffffff", // White - Main background
-        "background-secondary": "#fafafa", // Very light gray - Secondary background (sections, subtle contrast)
-        "background-tertiary": "#f4f4f4", // Light gray - Tertiary background (cards, elevated elements)
+        "background-main": "#F9F9F9", // Slightly off-white - Main background (avoids bright white, soft, clean look)
+        "background-secondary": "#F9F7F2", // Warm off-white - Secondary background (sections, subtle contrast, calm)
 
         // Dark Mode Backgrounds
         "background-main-dark": "#1e1e1e", // Dark gray - Main background
@@ -75,27 +24,25 @@ export default {
         "background-tertiary-dark": "#121212", // Very dark gray - Tertiary background (cards, elevated elements)
 
         // 🌟 Primary Color (Brand color) - Used for logos, links, main UI accents
-        primary: "#30638e", // Medium Blue-Teal - Main brand color
-        "primary-dark": "#234968", // Darker shade of primary - Used for hover states, active links
-        "primary-contrast": "#f0f0f0", // Light contrast color - Text/icons on primary backgrounds
+        primary: "#30638e", // Muted teal blue - Professional, modern feel
+        "primary-dark": "#244f6c", // Darker variant of primary - for hover states or dark mode
+        "primary-contrast": "#ffffff", // White - Ideal text color on primary color for high contrast
 
         // 🎨 Secondary Color (Supporting color) - Used for secondary buttons, borders, icons
-        secondary: "#6d7379", // Cool Gray - Subtle accents, UI backgrounds
-        "secondary-dark": "#4b4f55", // Darker gray - Hover states for secondary buttons
-        "secondary-contrast": "#f0f0f0", // Light contrast color - Text/icons on secondary backgrounds
+        secondary: "#e0e0e0", // Light gray - Primary supporting color, used for secondary UI elements, borders, or backgrounds
+        "secondary-dark": "#b8b8b8", // Medium gray - A darker, more defined shade for hover states, borders, or elements requiring more emphasis
+        "secondary-contrast": "#333333", // Dark gray - For text or icons on secondary elements, ensuring readability and contrast
 
         // 🔥 Accent/Alert Color (CTA color) - Used only for CTA buttons, attention elements
-        accent: "#d96c06", // Burnt Orange - CTA buttons, alerts, important highlights
-        "accent-dark": "#a45004", // Darker shade of accent - Hover states for CTAs
-        "accent-contrast": "#f0f0f0", // Light contrast color - Text/icons on accent backgrounds
+        accent: "#2D2D2A", // Dark charcoal - Can be used for strong CTAs or important text
+        "accent-dark": "#1c1c1b", // Darker variant of accent - for hover states or dark mode
+        "accent-contrast": "#F9F9F9", // Slightly off-white - For text or icons on accent elements, ensuring readability
 
         // Border Colors
-        "main-border": "#e0e0e0", // Soft gray - Used for non-interactive borders (dividers, content separation)
-        "strong-border": "#bdbdbd", // Medium gray - Used for interactive elements (outline buttons, input fields)
+        border: "#e0e0e0", // Soft gray - Used for non-interactive borders (dividers, content separation)
 
         // Dark Mode Border Colors
-        "main-border-dark": "#555555", // Lighter dark gray - Non-interactive borders (dividers, content separation)
-        "strong-border-dark": "#888888", // soft gray - Stronger borders for interactive elements (buttons, inputs)
+        "border-dark": "#555555", // Lighter dark gray - Non-interactive borders (dividers, content separation)
 
         // 🌚 Light Mode and Dark Mode specific for Text
         strong: "#121212", // Darkest text for strong emphasis (headings) in light mode
@@ -119,13 +66,13 @@ export default {
       },
 
       spacing: {
-        // header: "60px",
-        navbarHeight: "60px",
-        heroSection: "calc(100vh - 60px)",
-        navmenuHeight: "100vh",
+        "site-header-height": "4rem", // 'h-16 or 64px'
+        "site-header-height-sm": "5rem", // 'h-20 or 80px'
+        "site-header-height-lg": "6rem", // 'h-24 or 96px'
       },
     },
   },
+
   plugins: [
     plugin(function ({ addVariant }) {
       // The 'light' and 'dark' classes are added to the <html> element

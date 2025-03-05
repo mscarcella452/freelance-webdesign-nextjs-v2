@@ -1,0 +1,96 @@
+@tailwind utilities;
+
+@layer utilities {
+  /*-------------- Spacing & Layout Utilities -------------- */
+
+  .container-sm {
+    @apply mx-auto max-w-4xl w-full;
+  }
+
+  .container-md {
+    @apply mx-auto max-w-5xl w-full;
+  }
+
+  .container-lg {
+    @apply mx-auto max-w-6xl w-full;
+  }
+
+  .container-xl {
+    @apply mx-auto max-w-7xl w-full;
+  }
+
+  /*-------------- Gap -------------- */
+
+  .inherit-gap {
+    gap: inherit;
+  }
+  .gap-wide {
+    @apply gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20;
+    /* Use for large spacing between separate content blocks in the same section.
+       Example: gap between heading and card grids in a features section. */
+  }
+
+  .gap-normal {
+    @apply gap-4 sm:gap-6 md:gap-8 lg:gap-12 xl:gap-16;
+    /* Use for medium spacing between related content.
+       Example: gap between cards in a grid or between header and paragraph in a flex column. */
+  }
+
+  .gap-tight {
+    @apply gap-4 sm:gap-6 md:gap-8 lg:gap-8 xl:gap-12;
+    /* Use for tighter spacing between related content (smaller gap).
+       Example: gap between subheadline and header. */
+  }
+
+  /*-------------- Container Padding -------------- */
+
+  .p-header {
+    @apply px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12;
+  }
+
+  .p-hero {
+    @apply px-4 py-12 sm:px-6 sm:py-14 md:px-8 md:py-16 lg:px-12 lg:py-24 xl:px-16 xl:py-32;
+  }
+
+  .p-section {
+    @apply px-8 py-10  sm:px-10 py-12  md:px-12 py-16  lg:px-16 py-20;
+  }
+
+  .p-container-wide {
+    @apply p-8 sm:p-10 md:p-12;
+  }
+
+  .p-container {
+    @apply p-6 sm:p-8 md:p-10;
+  }
+
+  .p-container-tight {
+    @apply p-4 sm:p-6 lg:p-8;
+  }
+
+  .p-container-card {
+    @apply p-4 sm:p-6;
+  }
+
+  .p-container-badge {
+    @apply p-4;
+  }
+
+  .p-container-badge-compact {
+    @apply p-2;
+  }
+
+  .p-container-tile {
+    @apply p-1;
+  }
+  /* 
+  .p-btn-wide {
+    @apply px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 lg:px-12 lg:py-6;
+  } */
+  .p-btn {
+    @apply px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 lg:px-10 lg:py-5;
+  }
+  /* .p-btn-tight {
+    @apply px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 lg:px-8 lg:py-4;
+  } */
+}
